@@ -12,12 +12,14 @@ import { useStaticQuery, graphql } from "gatsby"
 import "./bootstrap.min.css"
 import "./layout.css"
 
-import NavBar from "./Global/NavBar"
+import NavBar from "./Globals/NavBar"
+import Footer from "./Globals/Footer"
 
 const Layout = ({ children }) => (
   <>
     <NavBar />
     {children}
+    <Footer />
   </>
 )
 
