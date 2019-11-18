@@ -21,7 +21,12 @@ export default class NavBar extends Component {
     ],
   }
   navbarHandler = () => {
-    console.log("Hello")
+    this.state.navbarOpen
+      ? this.setState({ navbarOpen: false, css: "collapse navbar-collapse" })
+      : this.setState({
+          navbarOpen: true,
+          css: "collapse navbar-collapse show",
+        })
   }
 
   render() {
@@ -43,6 +48,22 @@ export default class NavBar extends Component {
         >
           <span className="navbar-toggler-icon" />
         </button>
+        <div className={this.state.css}>
+          <ul className="navbar-nav mx-auto">
+            {this.state.links.map(link => {
+              return (
+                <li key={link.id} className="nav-item">
+                  <Link to={link.path} className="nav-link text-capitalize">
+                    {link.text}
+                  </Link>
+                </li>
+              )
+            })}
+            <li className="nav-item ml-sm-5">
+              <FaCartArrowDown className="cart-icon" />
+            </li>
+          </ul>
+        </div>
       </nav>
     )
   }
