@@ -23,6 +23,7 @@
     "react-icons": "^3.8.0"
   },
   "devDependencies": {
+    "env-cmd": "^10.0.1",
     "prettier": "^1.19.1"
   },
   "keywords": [
