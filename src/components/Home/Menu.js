@@ -34,7 +34,6 @@ export default class Menu extends Component {
     }
   }
   render() {
-    console.log(this.state.categories)
     if (this.state.items.length > 0) {
       return (
         <section className="menu py-5">
