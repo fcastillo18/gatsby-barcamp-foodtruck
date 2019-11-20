@@ -21,7 +21,17 @@ export default class Menu extends Component {
     }
   }
   handleItems = category => {
-    console.log(category)
+    let tempItems = [...this.state.items]
+    if (category === "all") {
+      this.setState(() => {
+        return { foodTruckItems: tempItems }
+      })
+    } else {
+      let items = tempItems.filter(({ node }) => node.category === category)
+      this.setState(() => {
+        return { foodTruckItems: items }
+      })
+    }
   }
   render() {
     console.log(this.state.categories)
