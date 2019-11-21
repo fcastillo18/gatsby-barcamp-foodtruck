@@ -48,6 +48,7 @@ h6 {
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
+  opacity: 1 !important;
 }
 .about-background {
   min-height: 60vh;
@@ -58,6 +59,7 @@ h6 {
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
+  opacity: 1 !important;
 }
 .menu {
   background: var(--mainGrey);
