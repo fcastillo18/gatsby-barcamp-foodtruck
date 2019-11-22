@@ -30,6 +30,8 @@ module.exports = {
       options: {
         apiKey: process.env.SNIPCART_API,
         autopop: true,
+        js: "https://cdn.snipcart.com/themes/v3.0.3/default/snipcart.js",
+        styles: "https://cdn.snipcart.com/themes/v3.0.3/default/snipcart.css",
       },
     },
     `gatsby-transformer-sharp`,

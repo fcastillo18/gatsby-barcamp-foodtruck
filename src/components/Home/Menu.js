@@ -38,7 +38,7 @@ export default class Menu extends Component {
       return (
         <section className="menu py-5">
           <div className="container">
-            <Title title="best of our menu" />
+            <Title title="our menu" />
             <div className="row mn-5">
               <div className="col-10 mx-auto text-center">
                 {this.state.categories.map((category, index) => {

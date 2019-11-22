@@ -36,7 +36,7 @@ export default class NavBar extends Component {
         bg-light navbar-light"
       >
         <Link to="/" className="navbar-brand">
-          <img src={logo} alt="logo" />
+          <img src={logo} alt="logo" className="logo"/>
           {/* https://www.iconfinder.com/icons/3392471/burger_fast_food_unhealthy_icon
         Creative Commons (Attribution 3.0 Unported);
         https://www.iconfinder.com/webalys */}

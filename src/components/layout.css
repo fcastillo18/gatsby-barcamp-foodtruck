@@ -1,9 +1,10 @@
 :root {
   --mainBrown: #2d1e1f;
-  --mainYellow: #ff9e09;
-  --mainGrey: #ece8dc;
+  --mainBlue: #389ad4;
+  --mainGrey: #f7f4eb;
   --mainWhite: #fff;
   --mainDark: #000;
+  --mainRed: #c82128;
 }
 body {
   background: var(--mainWhite);
@@ -20,31 +21,35 @@ h6 {
   letter-spacing: 0.25rem !important;
 }
 .text-yellow {
-  color: var(--mainYellow) !important;
+  color: var(--mainBlue) !important;
 }
 .title {
   letter-spacing: 0.3rem;
   font-weight: 400;
 }
+.logo {
+  color: var(--mainBlue);
+}
 .cart-icon {
   cursor: pointer;
-  color: var(--mainYellow);
+  color: var(--mainBlue);
   font-size: 2rem;
 }
 .btn-yellow {
-  color: var(--mainYellow) !important;
-  border-color: var(--mainYellow) !important;
+  color: var(--mainBlue) !important;
+  border-color: var(--mainBlue) !important;
 }
 .btn-yellow:hover {
-  background: var(--mainYellow) !important;
+  background: var(--mainBlue) !important;
   color: var(--mainDark) !important;
 }
+/* 69acd3 */
 .default-background {
   min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(rgba(255, 158, 9, 0.5), rgba(255, 158, 9, 0.5));
+  background: linear-gradient(rgb(171, 227, 255), rgba(171, 227, 255, 0.5));
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
@@ -55,7 +60,7 @@ h6 {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(rgba(255, 158, 9, 0.5), rgba(255, 158, 9, 0.5));
+  background: linear-gradient(rgb(171, 227, 255), rgba(171, 227, 255, 0.5));
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
