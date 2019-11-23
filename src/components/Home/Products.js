@@ -30,7 +30,9 @@ export default function Products() {
         return (
           <section className="py-5">
             <div className="container">
+              {/* TODO Title */}
               <Title title="our products" />
+              {/* TODO Product */}
               <div className="row">
                 {data.products.edges.map(({ node: product }) => {
                   return <Product key={product.id} product={product} />

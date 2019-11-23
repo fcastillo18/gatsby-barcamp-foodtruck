@@ -25,6 +25,7 @@ module.exports = {
         accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
       },
     },
+    // TODO add Snipcart
     {
       resolve: "gatsby-plugin-snipcart",
       options: {
